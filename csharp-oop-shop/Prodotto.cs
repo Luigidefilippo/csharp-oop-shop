@@ -43,6 +43,30 @@ namespace csharp_oop_shop
             set { prezzo = value; }
         }
 
-        
+        //COSTRUTTORE 
+
+    public Prodotto()
+        {
+            //GENERO UN NUMERO CASUALE PER IL CODICE PRODOTTO 
+            Random random = new Random();
+            codice = random.Next(1000, 10000); // NUMERO CASUALE 
+        }
+
+        //PREZZO BASE SENZA IVA 
+        public decimal PrezzoBase()
+        {
+            return prezzo;
+        }
+        //PREZZO COMPRESO DI IVA 
+        public decimal PrezzoConIva()
+        {
+            return prezzo + (prezzo * iva / 100);
+        }
+        //CODICE + NOME 
+        public string NomeEsteso()
+        {
+            return $"{ codice } - {nome}";
+        }
+
     }
 }
