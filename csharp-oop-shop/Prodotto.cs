@@ -18,6 +18,31 @@ namespace csharp_oop_shop
         //CODICE SOLO IN LETTURA 
         public int Codice => codice;
 
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
 
+        //ottenere o impostare la descrizione 
+        public string Descrizione
+        {
+            get { return descrizione;}
+            set { descrizione = value; }
+        }
+
+        public decimal IVA
+        {
+            get { return iva; }
+            set { iva = value; }
+        }
+
+        public decimal Prezzo
+        {
+            get { return prezzo; }
+            set { prezzo = value; }
+        }
+
+        
     }
 }
