@@ -58,7 +58,7 @@ namespace csharp_oop_shop
             return prezzo;
         }
         //PREZZO COMPRESO DI IVA 
-        public decimal PrezzoConIva()
+        public decimal PrezzoConIVA()
         {
             return prezzo + (prezzo * iva / 100);
         }
